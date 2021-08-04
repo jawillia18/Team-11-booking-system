@@ -2,28 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jhbcampus</title>
-    <link rel="stylesheet" href="../scss/extra.css">
-
+    <title>The 2021 Frontend Developer Crash Course</title>
+    <link rel="stylesheet" href="../scss/main.css">
+    
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="images/wethink.png" class="logo">
-            <div class="navbar">
-                <a href="index.html">HOME</a>
-            </div>
-            <button class="btn"><a href="">Contact</a></button>
-        </div>
-        <div class="content">
-            <h1>Johannesburg Campus</h1>
-            <button class="btn"><a href="">Pick a date</a></button>
-            <button class="btn"><a href="">Reschedule</a></button>
+    <div class="bg-image" style="background-image: url(../images/keenan-constance-lAjPSof6X_o-unsplash.jpg)">
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">
+                <img src="../images/wethink.png" alt="WeThinkCode" width="50" height="55">
+            </a>
 
+            <img id="mobile-cta" class="mobile-menu" src="../images/menu.svg" alt="Open Navigation">
 
+            <nav class="navbar" >
+                <img id="mobile-exit" class="mobile-menu-exit" src="../images/exit.svg" alt="Close Navigation">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                </ul>
+                
+
+                <ul class="secondary-nav">
+                    <li class="go-premium-cta"><a href="contact.html">CONFIRM</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+        
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })    
+        </script>
+    </div>
+
+
+    <section class="footer">
+        <h1>JOHANNESBURG CAMPUS</h1>        
+        <P>lists where we located ,etc...</P>
+    </section>
+
+    <section class="contents">
+
+        <div class="row">
+            <div class="content-col">
+                <h1>The side with the information</h1>
+                <p>just lots more information, try to get important stuff,etc..</p>
+            </div>
+            <div class="content-col">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14318.967541301312!2d28.0401769!3d-26.2050735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77a3e32d421bda49!2sWeThinkCode_!5e0!3m2!1sen!2sza!4v1628027977210!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+
+    </section>
+
 </body>
 </html>

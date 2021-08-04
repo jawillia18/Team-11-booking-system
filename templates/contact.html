@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 2021 Frontend Developer Crash Course</title>
+    <link rel="stylesheet" href="../scss/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="bg-image" style="background-image: url(../images/pexels-negative-space-92904.jpg); height: 65vh;">
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">
+                <img src="../images/wethink.png" alt="WeThinkCode" width="50" height="55">
+            </a>
+
+            <img id="mobile-cta" class="mobile-menu" src="../images/menu.svg" alt="Open Navigation">
+
+            <nav class="navbar" >
+                <img id="mobile-exit" class="mobile-menu-exit" src="../images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="index.html">Home</a></li>
+                </ul>
+
+
+                <ul class="secondary-nav">
+                    <li class="go-premium-cta"><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+        
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+        </script>
+    </div>
+
+
+   
+
+    <section class="contact-us">
+        <h1>Contact Us!</h1>
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5 >Cape Town:</h5> 
+                        <p>P3 Terrace Level, Portswood Square,<br>
+                        Victoria & Alfred Waterfront, Cape Town, 8001</p>
+                        <h5>Johannesburg:</h5> 
+                        <p>84 Albertina Sisulu Rd, Johannesburg, 2000</p>
+                    </span>
+                </div>
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h6 style="font-weight: 300; font-size: 15px;">info@wethinkcode.co.za</h6> 
+                        </span>
+                    </div>
+                </div>    
+                </div>   
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <div class="phone-col">
+                        <span>
+                            <h5>JHB:</h5> 
+                                <h6 style="font-weight: 300; font-size: 15px;">010 599 0279</h6>
+                                <p> Monday to Friday: 8am–5pm<br>
+                                    Saturday: 10am–2pm<br>
+                                    Sunday: Closed<br>
+                                    </p>
+                            
+                        </span>
+                        </div>
+                        <div class="phone-col">
+                            <span>
+                                <h5>CPT:</h5>
+                            <h6 style="font-weight: 300; font-size: 15px;">021 202 5424</h6> 
+                            <p> Monday to Friday	8am–5pm<br>
+                                Saturday to Sunday	Open 24 hours<br>
+                                Holidays  Hours might differ</p>
+                                
+                            </span>
+                            </div>
+                        </div>
+                </div> 
+                
+            </div>
+            
+
+
+    </section>
+</body>
+</html>

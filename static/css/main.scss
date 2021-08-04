@@ -6,7 +6,6 @@
 :root {
     --primary-color: #007AF3;
 }
-
 body {
     
     // background-image: url(../images/pexels-negative-space-92904.jpg);
@@ -14,6 +13,8 @@ body {
     margin: 0;
     font-family: 'Poppins';
 }
+
+
 
 .navbar {
     background: transparent;
@@ -56,7 +57,7 @@ section {
 }
 
 .hero {
-    text-align: center;
+    text-align: left;
 }
 
 .left-col {
@@ -92,8 +93,10 @@ section {
 
 
 section.features-section {
+
     background: #20272E;
     color: white;
+
 }
 
 ul.features-list {
@@ -287,7 +290,7 @@ nav {
     }
 
     section {
-        padding: 10em 4em;
+        padding: 5em 4em;
     }
 
     .hero .container {
@@ -296,7 +299,7 @@ nav {
         text-align: left;
 
         .left-col {
-            margin: 3em 3em 0 5em;
+            margin: 0;
 
             h1 {
                 font-size: 3em;
@@ -396,7 +399,6 @@ nav {
         }
     }
 }
-
 #login-form{
     display: none;
     /*hides form*/
@@ -473,12 +475,7 @@ nav {
 .check-box{
     margin: 30px 10px 34px 0;
 }
-span{
-    color:#007AF3;
-    font-size: 12px;
-    bottom: 68px;
-    position: absolute;
-}
+
 #login{
     left: 50px;
 }
@@ -493,3 +490,4 @@ span{
     color: #007AF3;
     font-size: 15;
 }
+
