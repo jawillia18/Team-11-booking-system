@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BootCampBookingSys-T11</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet"type="text/css" href="{% static 'css/main.css' %}">
     
 </head>
 <body>
-    <div class="bg-image-cpt">
+    <div class="bg-image-campus">
     <div class="navbar">
         <div class="container">
             <a class="logo" href="{% url 'index'%}">
@@ -26,12 +26,15 @@
                 </ul>
 
                 <ul class="secondary-nav">
-                    <li class="go-premium-cta"><a href="{% url 'contact'%}">CONFIRM</a></li>
+                    <li class="go-premium-cta"><a href="{% url 'contact'%}">Contact us</a></li>
                 </ul>
             </nav>
         </div>
     </div>
+    <h1 style="color: black;">Our National Campuses</h1>
+    <p style="color: darkgrey;">Please select your campus of choice</p>
     <script>
+
         const mobileBtn = document.getElementById('mobile-cta')
               nav = document.querySelector('nav')
               mobileBtnExit = document.getElementById('mobile-exit');
@@ -43,29 +46,35 @@
         mobileBtnExit.addEventListener('click', () => {
             nav.classList.remove('menu-btn');
         })
+
+
+
     </script>
-    </div>
+</div>
 
-
-    <section class="footer">
-        <h1>CAPE TOWN CAMPUS</h1>        
-        <P>lists where we located ,etc...</P>
-    </section>
-
-
-    <section class="contents">
-
+    <section class="campus">
         <div class="row">
-            <div class="content-col">
-                <h1>The side with the information</h1>
-                <p>just lots more information, try to get important stuff,etc..</p>
+            <div class="campus-col">
+                <img src="{% static 'images/maatla-seetelo-SRT7_Kq9cOE-unsplash.jpg'%}" alt="">
+                <div class="layer">
+                <a href="{% url 'jhbcampus'%}"><h3>JOHANNESBURG</h3></a>
+                </div>  
             </div>
-            <div class="content-col">
-                <iframe title="Campus Map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13245.3005125198!2d18.4173789!3d-33.9070308!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc2abf3b048340034!2sWeThinkCode_!5e0!3m2!1sen!2sza!4v1628028686272!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="campus-col">
+                <img src="{% static 'images/pexels-taryn-elliott-3889695.jpg'%}" alt="">
+                <div class="layer">
+                <a href="{% url 'CPT'%}"><h3>CAPE TOWN</h3></a>
+                </div>  
             </div>
-
-        </div>
-
+            <div class="campus-col">
+                <img src="{% static 'images/riaan-myburgh-icNawJ7Q_TY-unsplash.jpg'%}" alt="">
+                <div class="layer">
+                <a href="{% url 'durban'%}"><h3>DURBAN</h3></a>
+                </div>  
+            </div>
+    
+    </div>
+    
     </section>
 </body>
 </html>

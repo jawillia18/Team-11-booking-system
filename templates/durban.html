@@ -1,34 +1,35 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The 2021 Frontend Developer Crash Course</title>
-    <link rel="stylesheet" href="../scss/main.css">
+    <title>BootCampBookingSys-T11</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/main.css' %}">
     
 </head>
 <body>
-    <div class="bg-image" style="background-image: url(../images/captureson-photography-YYWro5qSxAU-unsplash.jpg)">
+    <div class="bg-image-dbn">
     <div class="navbar">
         <div class="container">
-            <a class="logo" href="index.html">
-                <img src="../images/wethink.png" alt="WeThinkCode" width="50" height="55">
+            <a class="logo" href="{% url 'index'%}">
+                <img src="{% static 'myapp/images/wethink.png'%}" alt="WeThinkCode" width="50" height="55">
             </a>
 
-            <img id="mobile-cta" class="mobile-menu" src="../images/menu.svg" alt="Open Navigation">
+            <img id="mobile-cta" class="mobile-menu" src="{% static 'myapp/images/menu.svg'%}" alt="Open Navigation">
 
             <nav class="navbar" >
-                <img id="mobile-exit" class="mobile-menu-exit" src="../images/exit.svg" alt="Close Navigation">
+                <img id="mobile-exit" class="mobile-menu-exit" src="{% static 'myapp/images/exit.svg'%}" alt="Close Navigation">
                 <ul class="primary-nav">
-                    <li class="current"><a href="#">Home</a></li>
+                    <li class="current"><a href="{% url 'index'%}">Home</a></li>
                 </ul>
 
                 <ul class="secondary-nav">
-                    <li class="go-premium-cta"><a href="contact.html">CONFIRM</a></li>
+                    <li class="go-premium-cta"><a href="{% url 'contact'%}">CONFIRM</a></li>
                 </ul>
             </nav>
         </div>
-    </div>
+    </div> 
     <script>
         const mobileBtn = document.getElementById('mobile-cta')
               nav = document.querySelector('nav')
@@ -59,7 +60,7 @@
                 <p>just lots more information, try to get important stuff,etc..</p>
             </div>
             <div class="content-col">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14318.967541301312!2d28.0401769!3d-26.2050735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77a3e32d421bda49!2sWeThinkCode_!5e0!3m2!1sen!2sza!4v1628027977210!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe title="Campus Map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14318.967541301312!2d28.0401769!3d-26.2050735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77a3e32d421bda49!2sWeThinkCode_!5e0!3m2!1sen!2sza!4v1628027977210!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
         </div>
